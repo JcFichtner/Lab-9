@@ -1,0 +1,24 @@
+Suponha que x1 e x2 são duas variáveis de tipo double que você deseja adicionar
+como inteiros e atribuir a uma variável inteira. Construa uma instrução C++ que
+faça isso usando type cast.
+
+Digite o valor x1: 25.5
+Digite o valor x2: 3.7
+A adição inteira dos valores é 28.
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	cout << "Digite o valor de X1: ";
+	double x1;
+	cin >> x1;
+
+	cout << "Digite o valor de X2: ";
+	double x2;
+	cin >> x2;
+
+	cout << (int)x1 + (int)x2;
+}
