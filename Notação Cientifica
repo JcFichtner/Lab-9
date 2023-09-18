@@ -1,0 +1,25 @@
+Escreva um programa que leia um número ponto-flutuante e exiba-o na notação
+padrão do cout, em notação científica e em notação decimal (com duas casas após
+a vírgula). Use cout << scientific e cout << fixed para mudar os formatos e
+cout.precision() para definir o número de casas decimais. 
+
+Digite um ponto-flutuante: 258040.5
+Notação padrão: 258041
+Notação científica: 2.580405e+005
+Notação decimal: 258040.50
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	cout << "Digite um numero ponto flutuante: ";
+	double num;
+	cin >> num;
+
+	cout << num << endl;
+	cout << scientific << num << endl;
+	cout << fixed;
+	cout.precision(2);
+	cout << num;
+
+}
