@@ -1,0 +1,41 @@
+Escreva um programa que peça ao usuário para digitar certa quantidade de
+segundos como um valor inteiro. O programa deve mostrar o equivalente em dias,
+horas, minutos e segundos. Use constantes para representar o número de horas em
+um dia, o número de minutos em uma hora e o número de segundos em um
+minuto. A saída deve ficar no formato abaixo:
+
+Entre com o número de segundos: 31600000
+31600000 segundos = 365 dias, 17 horas, 46 minutos e 40 segundos
+
+using namespace std;
+
+int main()
+{
+	/* Para descobrir quantos dias tem em 31.600.000 segundos
+	   é preciso descobrir quantos segundos tem em um dia
+	   e depois dividir o resultado por 31.600.000 */
+	
+	const int segundos_minutos = 60;
+	const int minutos_horas = 60;
+	const int horas_dias = 24;
+
+	double segundos_dia = segundos_minutos * minutos_horas * horas_dias;
+
+	int dias = 31600000 / segundos_dia;
+
+	//Calculo para descobrir as horas
+
+	int horas = 31600000 - 31536000;
+
+	    horas = horas / 3600;
+
+	//Calculo para descobrir os minutos
+
+	int minutos = 64000 - 61200;
+
+		minutos = minutos / 60;
+
+		cout << minutos;
+    //Saída..
+
+		cout << "31.600.000 segundos tem: " << dias << " Dias, " << horas << " Horas, " << minutos << " Minutos";
