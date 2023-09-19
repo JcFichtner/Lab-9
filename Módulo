@@ -1,0 +1,21 @@
+Escreva um programa para ler dois números inteiros x e y, e exibir o quociente e o
+resto da divisão inteira entre eles:
+
+Digite dois números inteiros: 11 4
+O quociente 11/4 é 2
+O resta da divisão 11%4 é 3
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	cout << "Digite dois numeros inteiros: ";
+	int n1, n2;
+	cin >> n1 >> n2;
+
+	cout << "O Quociente entre 11 e 4 = " << n1 / n2 << endl;
+	cout << "O Resto da divisão entre 11 % 4 = " << n1 % 4;
+
+}
