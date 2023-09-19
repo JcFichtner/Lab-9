@@ -1,0 +1,16 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() 
+{ 
+	float km_metros = 22.800;
+	const int km = 22;
+	const int metro = 800;
+
+	cout << fixed;
+	cout.precision(3);
+	cout << km_metros << " Metros equivalem a " << km << " quilometros e " << metro << " metros" << endl;
+
+}
