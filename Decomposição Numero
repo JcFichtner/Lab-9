@@ -1,0 +1,16 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() 
+{ 
+	double num = 10.5;
+	double inteiro;
+	double decimal = modf(num,&inteiro);
+
+	
+	cout << "A parte inteira : " << inteiro << endl;
+	cout << "A parte Dicimal : " << decimal;
+
+}
